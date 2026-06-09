@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+backend/node_modules/
+frontend_react/node_modules/
+
+# Environment variables and secrets
+.env
+backend/.env
+
+# SQLite database and temporary files
+backend/database/events.db
+backend/database/events.db-shm
+backend/database/events.db-wal
+
+# Logs
+*.log
+npm-debug.log*
+
+# macOS
+.DS_Store
