@@ -1,8 +1,9 @@
-import { renderLoginPage } from './pages/loginPage.js'
-import { renderEventsPage } from './pages/eventsPage.js'
-import { getCurrentUser } from './api/usersApi.js'
+import { renderLoginPage } from '@/pages/management/loginPage.js'
+import { renderEventsPage } from '@/pages/management/eventsPage.js'
+import { renderPortalPage } from '@/pages/public/portalPage.js'
+import { getCurrentUser } from '@/api/eventsApi.js'
 
-async function startApp() {
+async function renderManagement() {
   const token = localStorage.getItem('token')
 
   if (!token) {
@@ -21,4 +22,17 @@ async function startApp() {
   }
 }
 
+async function startApp() {
+  document.body.classList.remove('portal-body')
+  const route = window.location.hash.slice(1) || 'home'
+
+  if (route === 'manage') {
+    await renderManagement()
+    return
+  }
+
+  await renderPortalPage(route)
+}
+
+window.addEventListener('hashchange', startApp)
 startApp()

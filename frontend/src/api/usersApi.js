@@ -1,4 +1,4 @@
-import { API_BASE_URL } from './config.js'
+import { API_BASE_URL } from '@/api/config.js'
 
 export async function getUsers() {
   const token = localStorage.getItem('token')
@@ -70,4 +70,3 @@ export async function getCurrentUser() {
 
   return data
 }
-

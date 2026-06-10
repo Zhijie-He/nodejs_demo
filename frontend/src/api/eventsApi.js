@@ -1,4 +1,4 @@
-import { API_BASE_URL } from './config.js'
+import { API_BASE_URL } from '@/api/config.js'
 
 export async function getEvents(filters = {}) {
   const url = new URL(`${API_BASE_URL}/events`, window.location.origin)
