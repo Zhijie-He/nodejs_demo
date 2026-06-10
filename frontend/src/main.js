@@ -1,7 +1,7 @@
 import { renderLoginPage } from '@/pages/management/loginPage.js'
 import { renderEventsPage } from '@/pages/management/eventsPage.js'
 import { renderPortalPage } from '@/pages/public/portalPage.js'
-import { getCurrentUser } from '@/api/eventsApi.js'
+import { getCurrentUser } from '@/api/usersApi.js'
 
 async function renderManagement() {
   const token = localStorage.getItem('token')
