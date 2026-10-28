@@ -28,6 +28,32 @@ export function enhancePortal(page, isEnglish) {
     heading?.focus({ preventScroll: true })
   }, { signal })
   root.append(top)
+  root.querySelectorAll('[data-review-step]').forEach(button => {
+    button.addEventListener('click', () => {
+      const track = root.querySelector('.review-track')
+      const card = track?.querySelector('.review-card')
+      if (track && card) track.scrollBy({left: Number(button.dataset.reviewStep) * (card.getBoundingClientRect().width + 20), behavior: behavior()})
+    }, {signal})
+  })
+  const logoTrack = root.querySelector('.logo-track')
+  if (logoTrack) {
+    let paused = false
+    const move = step => {
+      const card = logoTrack.firstElementChild
+      const amount = (card?.getBoundingClientRect().width || 240) + 20
+      const end = logoTrack.scrollWidth - logoTrack.clientWidth
+      const next = logoTrack.scrollLeft + step * amount
+      logoTrack.scrollTo({ left: next > end + 2 ? 0 : next < 0 ? end : next, behavior: behavior() })
+    }
+    root.querySelectorAll('[data-logo-step]').forEach(b => b.addEventListener('click', () => move(Number(b.dataset.logoStep)), {signal}))
+    logoTrack.addEventListener('mouseenter', () => { paused = true }, {signal})
+    logoTrack.addEventListener('mouseleave', () => { paused = false }, {signal})
+    const timer = setInterval(() => {
+      const box = logoTrack.getBoundingClientRect()
+      if (!reduced.matches && !paused && !document.hidden && !logoTrack.matches(':focus-within') && box.top < innerHeight && box.bottom > 0) move(1)
+    }, 4000)
+    signal.addEventListener('abort', () => clearInterval(timer), {once:true})
+  }
   const update = () => {
     frame = 0
     const distance = document.documentElement.scrollHeight - innerHeight
