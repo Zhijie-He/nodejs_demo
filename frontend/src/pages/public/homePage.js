@@ -13,29 +13,29 @@ export function createHomePage() {
         <div class="portal-hero-glow"></div>
         <div class="portal-hero-copy">
           <span class="portal-kicker portal-kicker-light"><i></i> Connecting Europe and China</span>
-          <h1>让创新跨越边界，<br><span>让合作真正发生。</span></h1>
+          <h1>走进中国科技现场，<br><span>遇见下一种可能。</span></h1>
           <p>连接欧洲创新者与中国科技生态，在真实的产业现场、创业项目与高校网络中，建立长期而有价值的合作。</p>
           <div class="portal-hero-actions">
-            <a class="portal-button portal-button-light" href="#travel">探索科技旅行 ${portalIcon('arrow')}</a>
+            <a class="portal-button portal-button-light" href="journeys/hangzhou-2027/">探索2027杭州旅程 ${portalIcon('arrow')}</a>
             <a class="portal-button portal-button-outline" href="#about">了解 EU Cottage</a>
           </div>
         </div>
         <aside class="portal-hero-feature">
-          <span class="portal-feature-label"><i></i> Featured journey</span>
+          <span class="portal-feature-label"><i></i> NEXT JOURNEY · 2027</span>
           <div class="portal-feature-place">
-            <small>China innovation trip</small>
-            <strong>走进创新<br>发生的地方</strong>
+            <small>Hangzhou · Robotics & Innovation</small>
+            <strong>杭州 · 机器人<br>与创新之旅</strong>
           </div>
           <div class="portal-feature-meta">
             <span><small>Focus</small><strong>AI · Robotics</strong></span>
-            <span><small>Network</small><strong>20+ Partners</strong></span>
+            <span><small>Duration</small><strong>9 days · 8 nights</strong></span>
           </div>
         </aside>
         <div class="portal-hero-proof">
           <span>一个持续生长的中欧创新网络</span>
           <div><strong>2</strong><small>核心区域</small></div>
-          <div><strong>20+</strong><small>创新伙伴</small></div>
-          <div><strong>100+</strong><small>社群成员</small></div>
+          <div><strong>2027</strong><small>杭州新旅程</small></div>
+          <div><strong>9天</strong><small>探索与交流</small></div>
         </div>
       </section>
 
@@ -83,11 +83,10 @@ export function createHomePage() {
       </section>
 
       <section class="portal-partners">
-        <span class="portal-kicker">Trusted network</span>
-        <h2>与创新生态中的伙伴并肩前行</h2>
-        <div class="portal-partner-row">
-          <span>Huawei</span><span>ByteDance</span><span>JAKA Robotics</span><span>28digital</span><span>EIT Alumni</span><span>EIT CSSA</span>
-        </div>
+        <span class="portal-kicker">Beyond the visit</span><h2>一次旅程，更多种连接。</h2>
+        <p>企业里的真实问题，研究团队的新想法，同行伙伴的不同视角。</p>
+        <div class="portal-partner-row"><span>Robotics 机器人</span><span>Research 科研</span><span>Entrepreneurship 创业</span><span>Culture 城市文化</span></div>
+        <a class="portal-button" href="#travel">探索我们的旅程 ${portalIcon('arrow')}</a>
       </section>
       ${createPortalContact()}
     </main>

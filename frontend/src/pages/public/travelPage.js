@@ -1,58 +1,14 @@
 import { getEvents } from '@/api/eventsApi.js'
 import { createPortalContact } from '@/components/public/portalContact.js'
-import { portalIcon } from '@/components/public/portalIcon.js'
 import { escapeHtml, formatEventDate } from '@/utils/html.js'
-
 export async function createTravelPage() {
-  let events = []
-
-  try {
-    events = await getEvents()
-  } catch {
-    events = []
-  }
-
-  return `
-    <main class="portal-main">
-      <section class="portal-page-hero portal-page-hero-travel">
-        <span class="portal-kicker portal-kicker-light">Technology travel</span>
-        <h1>走进创新发生的地方。</h1>
-        <p>不做走马观花的参访。与创始人、工程师、研究者和城市创新者深入交流，建立真正有价值的连接。</p>
-      </section>
-      <section class="portal-section">
-        <div class="portal-section-heading">
-          <span class="portal-kicker">Upcoming journeys</span>
-          <h2>近期科技旅行与活动</h2>
-        </div>
-        <div class="portal-public-event-grid">
-          ${events.length
-            ? events.map(event => `
-              <article class="portal-public-event">
-                <div class="portal-public-event-art"><span>${escapeHtml(event.city)}</span><strong>${escapeHtml(event.title.slice(0, 1))}</strong></div>
-                <div class="portal-public-event-copy">
-                  <span class="portal-kicker">${escapeHtml(formatEventDate(event.date))}</span>
-                  <h3>${escapeHtml(event.title)}</h3>
-                  <p>${escapeHtml(event.subtitle || '进入真实产业现场，发现新的合作与可能。')}</p>
-                  <a href="#contact">咨询活动 ${portalIcon('arrow')}</a>
-                </div>
-              </article>
-            `).join('')
-            : `
-              <div class="portal-empty-events">
-                <span>${portalIcon('map')}</span><h3>新的旅程正在筹备</h3><p>联系我们，第一时间获取下一期科技旅行计划。</p>
-                <a class="portal-button" href="#contact">获取活动信息 ${portalIcon('arrow')}</a>
-              </div>
-            `
-          }
-        </div>
-      </section>
-      <section class="portal-process">
-        <div><span>01</span><strong>产业现场</strong><p>走进企业、实验室与科技园区。</p></div>
-        <div><span>02</span><strong>深度对话</strong><p>与决策者和实践者直接交流。</p></div>
-        <div><span>03</span><strong>文化体验</strong><p>理解创新背后的城市与文化。</p></div>
-        <div><span>04</span><strong>持续连接</strong><p>旅程结束后，合作才刚刚开始。</p></div>
-      </section>
-      ${createPortalContact()}
-    </main>
-  `
+ let events=[];let unavailable=false;
+ try { events=await getEvents() } catch { unavailable=true }
+ return `<main class="portal-main">
+ <section class="portal-page-hero portal-page-hero-travel"><span class="portal-kicker portal-kicker-light">CHINA TECH TRIP · EXPLORE TRIPS</span><h1>看见技术。<br>认识创造它的人。</h1><p>走进企业与研究现场，交换想法，也留出时间感受一座城市。每一期旅程，都是理解中国创新的新视角。</p></section>
+ <section class="portal-section"><div class="portal-section-heading"><span class="portal-kicker">Your next journey</span><h2>下一站，杭州。</h2></div>
+ <article class="trip-feature"><div class="trip-art"><span>HANGZHOU / 2027</span><strong>机器人<br>× 创新<br>× 城市</strong><small>ROBOTICS · PEOPLE · POSSIBILITIES</small></div><div class="trip-copy"><span class="trip-status">2027 · 筹备中 / In development</span><h2>杭州科技与创新之旅</h2><p class="trip-en">Hangzhou Tech & Innovation Journey</p><p>以机器人为起点，走进具身智能、人机交互与创业现场。与中欧同行一起，把参访中的问题带进创新工作坊和项目交流。</p><div class="trip-facts"><span>9天8晚</span><span>约30人</span><span>英文交流 · 中英口译</span></div><p>暂定 2027年3月27日—4月4日 · 价格待定</p><a class="portal-button" href="journeys/hangzhou-2027/">查看旅程 / Explore the trip ↗</a><small class="trip-disclaimer">日期及拟邀企业待确认，不含国际机票。</small></div></article></section>
+ <section class="portal-section trip-experience"><div class="portal-section-heading"><span class="portal-kicker">What to expect</span><h2>不止于参观。</h2></div><div class="trip-experience-grid"><article><span>01 / DISCOVER</span><h3>走进技术现场</h3><p>从机器人演示到应用场景，带着真实问题与技术及业务团队交流。</p></article><article><span>02 / CREATE</span><h3>一起把想法展开</h3><p>围绕用户需求、产品和商业模式共创，无需编程基础也能参与。</p></article><article><span>03 / CONNECT</span><h3>让交流继续发生</h3><p>中欧项目分享与预约对话，为旅程后的合作留下具体下一步。</p></article></div></section>
+ <section class="portal-section"><div class="portal-section-heading"><span class="portal-kicker">More journeys & experiences</span><h2>更多旅程与相遇。</h2></div><p>持续连接城市、技术与人。这里保留已有活动，让每一次相遇成为下一段旅程的起点。</p><div class="portal-public-event-grid">${unavailable?'<p role="status">活动暂时无法加载，请稍后刷新。 / Please try again later.</p>':events.length?events.map(event=>`<article class="portal-public-event"><div class="portal-public-event-art"><span>${escapeHtml(event.city)}</span><strong>${escapeHtml(event.title.slice(0,1))}</strong></div><div class="portal-public-event-copy"><span class="portal-kicker">${escapeHtml(formatEventDate(event.date))}</span><h3>${escapeHtml(event.title)}</h3><p>${escapeHtml(event.subtitle||'企业、研究与城市之间的交流体验。')}</p><a href="#contact">了解这段旅程 ↗</a></div></article>`).join(''):'<p>更多旅程故事将陆续分享。 / More trip stories will follow.</p>'}</div></section>
+ ${createPortalContact()}</main>`
 }

@@ -1,25 +1,25 @@
 .portal-site {
-  --portal-ink: #101828;
-  --portal-muted: #667085;
-  --portal-paper: #f4f7fb;
-  --portal-line: #e8edf4;
-  --portal-green: #51e3c2;
-  --portal-dark: #0b1220;
+  --portal-ink: #193d32;
+  --portal-muted: #627069;
+  --portal-paper: #f8f6ef;
+  --portal-line: #dcded3;
+  --portal-green: #e4ad7e;
+  --portal-dark: #173f34;
   background: var(--portal-paper);
   color: var(--portal-ink);
   font-family: Inter, "PingFang SC", "Microsoft YaHei", ui-sans-serif, system-ui, sans-serif;
 }
 
 .portal-body {
-  background: #f4f7fb;
+  background: #f8f6ef;
 }
 
 .portal-home-main {
   position: relative;
   background:
-    radial-gradient(circle at 8% 25%, rgba(23, 105, 255, 0.16), transparent 22%),
-    radial-gradient(circle at 92% 48%, rgba(81, 227, 194, 0.18), transparent 21%),
-    linear-gradient(180deg, #f4f7fb 0%, #e8f0ff 34%, #f1f5fb 55%, #e7f6f3 79%, #f4f7fb 100%);
+    radial-gradient(circle at 8% 25%, rgba(184, 95, 55, 0.16), transparent 22%),
+    radial-gradient(circle at 92% 48%, rgba(228, 173, 126, 0.18), transparent 21%),
+    linear-gradient(180deg, #f8f6ef 0%, #efeee3 34%, #f8f6ef 55%, #e8eddf 79%, #f8f6ef 100%);
 }
 
 .portal-home-main .portal-intro {
@@ -29,8 +29,8 @@
   border: 1px solid rgba(255, 255, 255, 0.9);
   border-radius: 26px 26px 0 0;
   background:
-    radial-gradient(circle at 88% 12%, rgba(81, 227, 194, 0.2), transparent 30%),
-    rgba(232, 240, 255, 0.9);
+    radial-gradient(circle at 88% 12%, rgba(228, 173, 126, 0.2), transparent 30%),
+    rgba(239, 238, 227, 0.9);
   box-shadow: 0 20px 60px rgba(15, 23, 42, 0.06);
 }
 
@@ -39,7 +39,7 @@
   border: 1px solid rgba(255, 255, 255, 0.9);
   border-top: 0;
   border-radius: 0 0 26px 26px;
-  background: rgba(232, 240, 255, 0.9);
+  background: rgba(239, 238, 227, 0.9);
   box-shadow: 0 20px 60px rgba(15, 23, 42, 0.06);
 }
 
@@ -51,12 +51,12 @@
   margin-top: 64px;
   margin-bottom: 64px;
   padding: 72px 40px;
-  border: 1px solid rgba(23, 105, 255, 0.08);
+  border: 1px solid rgba(184, 95, 55, 0.08);
   border-radius: 28px;
   background:
-    radial-gradient(circle at 8% 100%, rgba(23, 105, 255, 0.1), transparent 28%),
-    radial-gradient(circle at 92% 0%, rgba(81, 227, 194, 0.13), transparent 28%),
-    rgba(226, 247, 242, 0.94);
+    radial-gradient(circle at 8% 100%, rgba(184, 95, 55, 0.1), transparent 28%),
+    radial-gradient(circle at 92% 0%, rgba(228, 173, 126, 0.13), transparent 28%),
+    rgba(232, 237, 223, 0.94);
   box-shadow: 0 20px 60px rgba(15, 23, 42, 0.06);
 }
 
@@ -71,13 +71,13 @@
 
 .portal-brand-symbol {
   border-radius: 11px;
-  background: #1769ff;
-  box-shadow: 0 8px 22px rgba(23, 105, 255, 0.25);
+  background: #b85f37;
+  box-shadow: 0 8px 22px rgba(184, 95, 55, 0.25);
   color: white;
 }
 
 .portal-brand strong {
-  color: #101828;
+  color: #193d32;
   font-size: 16px;
   font-weight: 800;
   letter-spacing: -0.045em;
@@ -94,20 +94,20 @@
 }
 
 .portal-nav a::after {
-  background: #1769ff;
+  background: #b85f37;
 }
 
 .portal-button {
-  border-color: #0b1220;
-  background: #0b1220;
+  border-color: #173f34;
+  background: #173f34;
   border-radius: 12px;
 }
 
 .portal-button-light {
   border-color: transparent;
-  background: #51e3c2;
-  box-shadow: 0 10px 28px rgba(81, 227, 194, 0.2);
-  color: #0b1220;
+  background: #e4ad7e;
+  box-shadow: 0 10px 28px rgba(228, 173, 126, 0.2);
+  color: #173f34;
 }
 
 .portal-button-outline {
@@ -121,7 +121,7 @@
   margin: 0 auto;
   padding: 164px 56px 42px;
   border-radius: 0 0 30px 30px;
-  background: #0b1220;
+  background: #173f34;
   box-shadow: 0 30px 80px rgba(15, 23, 42, 0.18);
 }
 
@@ -142,8 +142,8 @@
 .portal-hero-mask {
   z-index: 1;
   background:
-    linear-gradient(90deg, #0b1220 0%, #0b1220 43%, rgba(11, 18, 32, 0.8) 66%, rgba(11, 18, 32, 0.38) 100%),
-    linear-gradient(0deg, rgba(11, 18, 32, 0.9), transparent 55%);
+    linear-gradient(90deg, #173f34 0%, #173f34 43%, rgba(23, 63, 52, 0.8) 66%, rgba(23, 63, 52, 0.38) 100%),
+    linear-gradient(0deg, rgba(23, 63, 52, 0.9), transparent 55%);
 }
 
 .portal-hero-grid {
@@ -154,8 +154,8 @@
 .portal-hero-glow {
   z-index: 1;
   background:
-    radial-gradient(circle at 24% 75%, rgba(23, 105, 255, 0.24), transparent 28%),
-    radial-gradient(circle at 70% 20%, rgba(81, 227, 194, 0.12), transparent 22%);
+    radial-gradient(circle at 24% 75%, rgba(184, 95, 55, 0.24), transparent 28%),
+    radial-gradient(circle at 70% 20%, rgba(228, 173, 126, 0.12), transparent 22%);
 }
 
 .portal-hero-copy {
@@ -164,11 +164,11 @@
 }
 
 .portal-kicker {
-  color: #1769ff;
+  color: #b85f37;
 }
 
 .portal-kicker-light {
-  color: #51e3c2;
+  color: #e4ad7e;
 }
 
 .portal-hero h1 {
@@ -180,7 +180,7 @@
 }
 
 .portal-hero h1 span {
-  color: #51e3c2;
+  color: #e4ad7e;
 }
 
 .portal-hero-copy > p {
@@ -202,7 +202,7 @@
   align-content: space-between;
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 20px;
-  background: rgba(11, 18, 32, 0.62);
+  background: rgba(23, 63, 52, 0.62);
   box-shadow: 0 24px 70px rgba(0, 0, 0, 0.24);
   color: white;
   backdrop-filter: blur(18px);
@@ -212,7 +212,7 @@
   display: flex;
   align-items: center;
   gap: 7px;
-  color: #51e3c2;
+  color: #e4ad7e;
   font-size: 9px;
   font-weight: 800;
   letter-spacing: 0.13em;
@@ -266,7 +266,7 @@
 }
 
 .portal-hero-proof strong {
-  color: #51e3c2;
+  color: #e4ad7e;
 }
 
 .portal-section,
@@ -286,27 +286,27 @@
 
 .portal-business-featured {
   background:
-    radial-gradient(circle at 90% 10%, rgba(81, 227, 194, 0.18), transparent 32%),
-    radial-gradient(circle at 10% 100%, rgba(23, 105, 255, 0.25), transparent 40%),
-    #0b1220;
+    radial-gradient(circle at 90% 10%, rgba(228, 173, 126, 0.18), transparent 32%),
+    radial-gradient(circle at 10% 100%, rgba(184, 95, 55, 0.25), transparent 40%),
+    #173f34;
 }
 
 .portal-card-icon {
   border-radius: 15px;
-  background: #eaf1ff;
-  color: #1769ff;
+  background: #eee8db;
+  color: #b85f37;
 }
 
 .portal-business-featured .portal-card-icon {
-  background: #51e3c2;
-  color: #0b1220;
+  background: #e4ad7e;
+  color: #173f34;
 }
 
 .portal-dark-section {
   background:
-    radial-gradient(circle at 85% 10%, rgba(81, 227, 194, 0.12), transparent 30%),
-    radial-gradient(circle at 10% 100%, rgba(23, 105, 255, 0.2), transparent 38%),
-    #0b1220;
+    radial-gradient(circle at 85% 10%, rgba(228, 173, 126, 0.12), transparent 30%),
+    radial-gradient(circle at 10% 100%, rgba(184, 95, 55, 0.2), transparent 38%),
+    #173f34;
   box-shadow: 0 30px 80px rgba(15, 23, 42, 0.14);
 }
 
@@ -315,13 +315,13 @@
 }
 
 .portal-ecosystem-grid article {
-  background: #0b1220;
+  background: #173f34;
 }
 
 .portal-ecosystem-grid span {
   border-radius: 13px;
-  background: rgba(81, 227, 194, 0.11);
-  color: #51e3c2;
+  background: rgba(228, 173, 126, 0.11);
+  color: #e4ad7e;
 }
 
 .portal-partner-row span {
@@ -330,23 +330,23 @@
 
 .portal-contact {
   background:
-    radial-gradient(circle at 85% 20%, rgba(81, 227, 194, 0.18), transparent 28%),
-    radial-gradient(circle at 5% 100%, rgba(23, 105, 255, 0.22), transparent 40%),
-    #0b1220;
+    radial-gradient(circle at 85% 20%, rgba(228, 173, 126, 0.18), transparent 28%),
+    radial-gradient(circle at 5% 100%, rgba(184, 95, 55, 0.22), transparent 40%),
+    #173f34;
 }
 
 .portal-footer {
-  background: #07101d;
+  background: #102e26;
 }
 
 .portal-page-hero {
-  background: #0b1220;
+  background: #173f34;
 }
 
 .portal-about-main {
   background:
-    radial-gradient(circle at 92% 55%, rgba(81, 227, 194, 0.1), transparent 22%),
-    linear-gradient(180deg, #f4f7fb, #edf4ff 55%, #f4f7fb);
+    radial-gradient(circle at 92% 55%, rgba(228, 173, 126, 0.1), transparent 22%),
+    linear-gradient(180deg, #f8f6ef, #f0eee4 55%, #f8f6ef);
 }
 
 .portal-about-main .portal-page-hero {
@@ -391,16 +391,16 @@
 
 .portal-page-hero-travel {
   background:
-    linear-gradient(90deg, rgba(11, 18, 32, 0.98), rgba(11, 18, 32, 0.45)),
+    linear-gradient(90deg, rgba(23, 63, 52, 0.98), rgba(23, 63, 52, 0.45)),
     url("https://blzcyeyievypdzfbvbik.supabase.co/storage/v1/object/public/event-photos/shanghai.jpg") center/cover;
 }
 
 .portal-page-hero-incubation,
 .portal-page-hero-about {
   background:
-    radial-gradient(circle at 78% 30%, rgba(81, 227, 194, 0.16), transparent 25%),
-    radial-gradient(circle at 15% 100%, rgba(23, 105, 255, 0.22), transparent 40%),
-    #0b1220;
+    radial-gradient(circle at 78% 30%, rgba(228, 173, 126, 0.16), transparent 25%),
+    radial-gradient(circle at 15% 100%, rgba(184, 95, 55, 0.22), transparent 40%),
+    #173f34;
 }
 
 .portal-public-event,
@@ -412,22 +412,22 @@
 
 .portal-public-event-art {
   background:
-    radial-gradient(circle at 75% 20%, rgba(81, 227, 194, 0.25), transparent 30%),
-    radial-gradient(circle at 10% 100%, rgba(23, 105, 255, 0.24), transparent 40%),
-    #0b1220;
+    radial-gradient(circle at 75% 20%, rgba(228, 173, 126, 0.25), transparent 30%),
+    radial-gradient(circle at 10% 100%, rgba(184, 95, 55, 0.24), transparent 40%),
+    #173f34;
 }
 
 .portal-public-event-art strong {
-  color: rgba(81, 227, 194, 0.2);
+  color: rgba(228, 173, 126, 0.2);
 }
 
 .portal-quote-section {
-  background: #0b1220;
+  background: #173f34;
 }
 
 .portal-story-number {
-  background: #51e3c2;
-  color: #0b1220;
+  background: #e4ad7e;
+  color: #173f34;
 }
 
 @media (max-width: 1050px) {
@@ -531,3 +531,9 @@
     font-size: 31px;
   }
 }
+
+/* China Tech Trip 公共视觉：森林绿、暖白与陶土橙 */
+.portal-home-main,.portal-about-main{background:#f8f6ef}.portal-header{border-radius:8px;box-shadow:0 8px 25px #173f3409}.portal-brand-symbol{background:#173f34;box-shadow:none}.portal-button{border-radius:5px}.portal-hero h1{line-height:1.18;letter-spacing:-.045em}.portal-hero-copy{max-width:620px}.portal-hero-feature{width:270px}.portal-hero-proof{border-color:#ffffff30}.portal-partners p{color:#627069;line-height:1.8}.portal-partners .portal-button{margin-top:30px}.trip-feature{display:grid;grid-template-columns: .85fr 1.15fr;border:1px solid #dcded3;border-radius:12px;overflow:hidden;background:#fffdf7}.trip-art{padding:42px;background:radial-gradient(circle at 90% 15%,#e4ad7e40,transparent 40%),linear-gradient(135deg,#173f34,#355c49);color:#f8f6ef;display:flex;flex-direction:column;justify-content:space-between;min-height:430px}.trip-art>span,.trip-art>small{font-size:11px;letter-spacing:2px}.trip-art strong{font-size:56px;line-height:1.3;font-weight:500;letter-spacing:4px}.trip-copy{padding:42px}.trip-copy h2{font-size:32px;line-height:1.3;margin:20px 0 8px}.trip-copy p{color:#627069;line-height:1.85}.trip-en{font-size:15px}.trip-status{color:#98603c;font-size:12px}.trip-facts{display:flex;flex-wrap:wrap;gap:10px;margin:25px 0}.trip-facts span{border:1px solid #dcded3;border-radius:30px;padding:7px 12px;font-size:12px}.trip-disclaimer{display:block;margin-top:14px;color:#627069}.trip-experience{padding-top:0}.trip-experience-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}.trip-experience-grid article{border-top:1px solid #bdc9b9;padding:25px 0}.trip-experience-grid article>span{font-size:11px;letter-spacing:1px;color:#b85f37}.trip-experience-grid h3{font-size:24px}.trip-experience-grid p{line-height:1.8;color:#627069}.portal-site a:focus-visible,.portal-site button:focus-visible{outline:3px solid #b85f37;outline-offset:5px}
+@media(max-width:1050px){.portal-hero-feature{display:none}.portal-hero-copy{max-width:700px}}@media(max-width:760px){.trip-feature,.trip-experience-grid{grid-template-columns:1fr}.trip-art{min-height:300px;padding:28px}.trip-art strong{font-size:44px}.trip-copy{padding:26px}.trip-copy h2{font-size:27px}.portal-hero{min-height:730px}.portal-hero h1{font-size:40px}.portal-hero-proof>span{font-size:12px}.portal-section-heading h2{line-height:1.25}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.portal-hero-video{display:none}}
+.portal-footer .portal-brand strong{color:#f8f6ef}.portal-footer p,.portal-footer a,.portal-footer small,.portal-footer-bottom,.portal-footer-links span{color:#becbbf}.portal-footer-links strong{color:#f8f6ef}.portal-footer .portal-brand-symbol{color:#f8f6ef;border:1px solid #77917d}
