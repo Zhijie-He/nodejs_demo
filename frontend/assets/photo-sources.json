@@ -1,0 +1,50 @@
+{
+  "license": "https://unsplash.com/license",
+  "note": "Unsplash License permits use without visible attribution. Destination photographs are illustrative, not group-event documentation.",
+  "images": [
+    {
+      "file": "west-lake-boats.jpg",
+      "author": "Vida Huang",
+      "source": "https://unsplash.com/photos/zIc7CHFqYuk"
+    },
+    {
+      "file": "west-lake-pavilion.jpg",
+      "author": "Kounotori",
+      "source": "https://unsplash.com/photos/NQJBkCU9v6o"
+    },
+    {
+      "file": "yu-garden.jpg",
+      "author": "Allan N",
+      "source": "https://unsplash.com/photos/AWinVtCXVQY"
+    },
+    {
+      "file": "nanjing-skyline.jpg",
+      "author": "Tianyang Zheng",
+      "source": "https://unsplash.com/photos/OFoheOWxi2Y"
+    },
+    {
+      "file": "nanjing-qinhuai.jpg",
+      "author": "Dendy",
+      "source": "https://unsplash.com/photos/X8EPQsYL754"
+    },
+    {
+      "file": "niushou-hd.jpg",
+      "source": "https://unsplash.com/photos/da8CRapZNx4",
+      "license": "https://unsplash.com/license"
+    },
+    {
+      "file": "tea-fields.jpg",
+      "source": "https://unsplash.com/photos/CU6rtcIRpfU",
+      "license": "https://unsplash.com/license",
+      "note": "Hangzhou tea harvesting; do not label as Nanjing or trip participants."
+    }
+  ],
+  "companyMedia": {
+    "note": "Official product illustrations, not trip photographs or evidence of partnership. Retain original rights; local preview assets.",
+    "unitree-g1.jpg": "https://www.unitree.com/g1/",
+    "westlake-robot.jpg": "https://www.wlrobo.com/videos/home-1.mp4",
+    "brainco-product.webp": "https://www.brainco.cn/en-US/products/bionic-hand",
+    "jaka-robot.png": "https://www.jaka.com/",
+    "deep-robot.webp": "https://www.deeprobotics.cn/"
+  }
+}

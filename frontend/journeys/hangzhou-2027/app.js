@@ -17,3 +17,6 @@ content.days.forEach(d=>{
 for(const id of ['included','excluded','conditions'])document.getElementById(id).textContent=content[id];
 const lang=document.getElementById('language');
 lang.addEventListener('click',()=>{const english=document.body.classList.toggle('english');lang.setAttribute('aria-pressed',String(english));lang.textContent=english?'中英双语 ↔':'English only ↔';document.querySelectorAll('.pills span').forEach(el=>{if(!el.dataset.bilingual)el.dataset.bilingual=el.textContent;el.textContent=english?el.dataset.bilingual.split(' / ')[0]:el.dataset.bilingual})});
+
+if(localStorage.getItem("trip-language")==="en") lang.click();
+lang.addEventListener("click",()=>localStorage.setItem("trip-language",document.body.classList.contains("english")?"en":"zh"));
