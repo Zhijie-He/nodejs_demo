@@ -79,7 +79,7 @@ export function enhancePortal(page, isEnglish) {
     const brand = document.createElement('a')
     brand.className = 'section-nav-brand'
     brand.href = '#home'
-    brand.textContent = 'EU Cottage'
+    brand.innerHTML = '<span class="brand-symbol"><img src="assets/logos/eucottage-brand.png" alt=""></span><span>EU Cottage</span>'
     brand.setAttribute('aria-label', text('EU Cottage 首页', 'EU Cottage home'))
     nav.append(brand)
     const entries = candidates.map(([selector, zh, en], i) => {
